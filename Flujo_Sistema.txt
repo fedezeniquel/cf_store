@@ -1,0 +1,16 @@
+[ CATÁLOGO ]
+   │
+   ├── 1. Selección de Producto:
+   │      - Elige variante de virola ('Sin virola' | 'Virola lisa' | 'Virola cincelada')
+   │      - Valida stock en tiempo real (variantes con stock 0 quedan deshabilitadas)
+   │
+   ├── 2. Carrito (Zustand + LocalStorage):
+   │      - Persistencia local ante recargas del navegador
+   │      - Cálculo instantáneo de subtotal
+   │
+   ├── 3. Modal de Confirmación:
+   │      - Solicita: Nombre completo, Localidad/Ciudad, Método de entrega (Retiro / Envío)
+   │
+   └── 4. Redirección a WhatsApp API:
+          - Generación de URI codificada (`[https://wa.me/](https://wa.me/)...`)
+          - Mensaje estructurado con emojis, ítems, variante, total y datos de contacto

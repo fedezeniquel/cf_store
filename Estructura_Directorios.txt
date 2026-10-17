@@ -1,0 +1,41 @@
+src/
+├── app/
+│   ├── (shop)/                     # Rutas públicas (Vidriera)
+│   │   ├── layout.tsx              # Navbar verde y Footer
+│   │   ├── page.tsx                # Home: Hero, Destacados, Storytelling (Z-pattern)
+│   │   ├── productos/
+│   │   │   ├── page.tsx            # Catálogo completo con filtros
+│   │   │   └── [slug]/page.tsx     # Ficha de producto y selector de virola
+│   │   └── nosotros/page.tsx       # Historia de marca y proceso agroecológico
+│   │
+│   ├── (admin)/                    # Rutas privadas para el vendedor
+│   │   ├── login/page.tsx          # Login simple para el vendedor
+│   │   └── admin/
+│   │       ├── layout.tsx          # Layout con verificación de sesión Supabase
+│   │       ├── page.tsx            # Dashboard con Alertas de Stock Bajo
+│   │       ├── inventario/page.tsx # Edición masiva de stock y precios
+│   │       └── productos/nuevo/    # Formulario de alta con subida de imagen
+│   │
+│   └── api/                        # Handlers / Server Actions auxiliares
+│
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   ├── shop/
+│   │   ├── ProductCard.tsx
+│   │   ├── VirolaSelector.tsx
+│   │   └── CartModal.tsx
+│   ├── admin/
+│   │   ├── LowStockAlert.tsx
+│   │   └── InventoryTable.tsx
+│   └── ui/                         # Botones, inputs y badges reutilizables
+│
+├── lib/
+│   ├── supabase/
+│   │   ├── client.ts               # Cliente cliente Supabase
+│   │   └── server.ts               # Cliente Server Components/Actions
+│   └── whatsapp.ts                 # Utilidad para formateo de mensaje y link wa.me
+│
+└── store/
+    └── useCartStore.ts             # Estado global del carrito con Zustand
