@@ -38,7 +38,10 @@ export default function RootLayout({
       lang="es"
       className={`${roboto.variable} ${montserrat.variable} ${inter.variable}`}
     >
-      <body className="min-h-screen flex flex-col font-body bg-base-white text-dark antialiased">
+      <body
+        suppressHydrationWarning
+        className="min-h-screen flex flex-col font-body bg-base-white text-dark antialiased"
+      >
         {children}
       </body>
     </html>
