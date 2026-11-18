@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Truck, ShieldCheck, Heart } from "lucide-react";
 
@@ -46,9 +47,20 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Columna Marca */}
           <div className="md:col-span-2 space-y-4">
-            <h3 className="text-2xl font-story font-bold text-white tracking-wide">
-              CF <span className="text-gold">YERBA</span>
-            </h3>
+            <div className="flex items-center gap-3">
+              <div className="relative w-9 h-9 rounded-full overflow-hidden bg-white p-0.5 shadow-xs shrink-0">
+                <Image
+                  src="/logo.jpg"
+                  alt="CF Yerba Logo"
+                  width={36}
+                  height={36}
+                  className="w-full h-full object-contain p-0.5"
+                />
+              </div>
+              <h3 className="text-2xl font-story font-bold text-white tracking-wide">
+                CF <span className="text-gold">YERBA</span>
+              </h3>
+            </div>
             <p className="text-silver text-sm font-body max-w-sm">
               Cultivando el ritual del buen mate. Productos artesanales, yerba agroecológica y accesorios para compartir momentos únicos.
             </p>

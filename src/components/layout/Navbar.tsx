@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -20,7 +21,17 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Logo & Marca */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-10 h-10 rounded-full overflow-hidden bg-white p-0.5 shadow-xs shrink-0">
+              <Image
+                src="/logo.jpg"
+                alt="CF Yerba Logo"
+                width={40}
+                height={40}
+                priority
+                className="w-full h-full object-contain p-0.5 group-hover:scale-105 transition-transform"
+              />
+            </div>
             <span className="text-2xl font-story font-bold text-white tracking-wide">
               CF <span className="text-gold">YERBA</span>
             </span>

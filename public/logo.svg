@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Fondo circular verde bosque -->
+  <circle cx="256" cy="256" r="240" fill="#04402A" stroke="#BFA004" stroke-width="12" />
+  
+  <!-- Hojas de Yerba Mate estilizadas en Dorado -->
+  <path d="M256 120 C290 170, 320 220, 310 290 C290 350, 256 380, 256 380 C256 380, 222 350, 202 290 C192 220, 222 170, 256 120 Z" fill="#BFA004" />
+  <path d="M256 140 L256 370" stroke="#04402A" stroke-width="6" stroke-linecap="round" />
+  <path d="M256 220 C275 205, 290 200, 300 205" stroke="#04402A" stroke-width="4" stroke-linecap="round" />
+  <path d="M256 260 C237 245, 222 240, 212 245" stroke="#04402A" stroke-width="4" stroke-linecap="round" />
+  <path d="M256 300 C275 285, 290 280, 298 285" stroke="#04402A" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Letras CF en Vino Tinto / Blanco -->
+  <circle cx="256" cy="256" r="64" fill="#A62447" stroke="#FFFFFF" stroke-width="4" />
+  <text x="256" y="272" font-family="sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" text-anchor="middle">CF</text>
+</svg>
