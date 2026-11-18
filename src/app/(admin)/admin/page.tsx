@@ -1,11 +1,13 @@
 import Link from "next/link";
-import { MOCK_PRODUCTS } from "@/lib/mockData";
+import { MOCK_PRODUCTS, MOCK_ORDERS } from "@/lib/mockData";
 import { LowStockAlert, LowStockItem } from "@/components/admin/LowStockAlert";
+import { SalesSummary } from "@/components/admin/SalesSummary";
 import { Button } from "@/components/ui/Button";
 import { Package, Boxes, AlertTriangle, PlusCircle, ArrowUpRight } from "lucide-react";
 
 export default function AdminDashboardPage() {
   const products = MOCK_PRODUCTS;
+  const orders = MOCK_ORDERS;
 
   // Calculamos alertas de bajo stock
   const lowStockItems: LowStockItem[] = [];
@@ -108,6 +110,9 @@ export default function AdminDashboardPage() {
           </span>
         </div>
       </div>
+
+      {/* Resumen de Ventas y Pedidos */}
+      <SalesSummary orders={orders} />
 
       {/* Alerta de Stock Bajo */}
       <LowStockAlert items={lowStockItems} />

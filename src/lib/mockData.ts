@@ -1,4 +1,4 @@
-import { Category, Product } from "@/types/database";
+import { Category, Product, OrderSummary } from "@/types/database";
 
 export const MOCK_CATEGORIES: Category[] = [
   { id: "cat-todos", name: "Todos", slug: "todos" },
@@ -175,3 +175,79 @@ export const MOCK_PRODUCTS: Product[] = [
   },
 ];
 
+export const MOCK_ORDERS: OrderSummary[] = [
+  {
+    id: "ped-101",
+    customerName: "Valentina Rossi",
+    location: "Posadas, Misiones",
+    deliveryMethod: "Retiro",
+    total: 47500,
+    status: "Completado",
+    date: "Hoy, 14:35",
+    items: [
+      {
+        productTitle: "Combo Ritual Completo CF",
+        variantName: "Set Completo",
+        quantity: 1,
+        unitPrice: 47500,
+      },
+    ],
+  },
+  {
+    id: "ped-102",
+    customerName: "Mariano Benítez",
+    location: "Rosario, Santa Fe",
+    deliveryMethod: "Envío",
+    total: 43700,
+    status: "Coordinando",
+    date: "Hoy, 11:20",
+    items: [
+      {
+        productTitle: "Mate Torpedo Artesanal Uruguayo",
+        variantName: "Virola lisa",
+        quantity: 1,
+        unitPrice: 28900,
+      },
+      {
+        productTitle: "Bombilla Pico de Loro de Alpaca",
+        variantName: "Estándar 19cm",
+        quantity: 1,
+        unitPrice: 14800,
+      },
+    ],
+  },
+  {
+    id: "ped-103",
+    customerName: "Camila Fernández",
+    location: "Córdoba Capital",
+    deliveryMethod: "Envío",
+    total: 21600,
+    status: "Completado",
+    date: "Ayer, 18:45",
+    items: [
+      {
+        productTitle: "Yerba Mate Agroecológica 1kg",
+        variantName: "Paquete 1kg",
+        quantity: 3,
+        unitPrice: 7200,
+      },
+    ],
+  },
+  {
+    id: "ped-104",
+    customerName: "Lucas Soria",
+    location: "CABA, Buenos Aires",
+    deliveryMethod: "Envío",
+    total: 33500,
+    status: "Pendiente",
+    date: "Ayer, 09:12",
+    items: [
+      {
+        productTitle: "Mate Torpedo Artesanal Uruguayo",
+        variantName: "Virola cincelada",
+        quantity: 1,
+        unitPrice: 33500,
+      },
+    ],
+  },
+];

@@ -26,3 +26,20 @@ export interface Product {
   category?: Category | null;
 }
 
+export interface OrderItemSummary {
+  productTitle: string;
+  variantName: string;
+  quantity: number;
+  unitPrice: number;
+}
+
+export interface OrderSummary {
+  id: string;
+  customerName: string;
+  location: string;
+  deliveryMethod: "Retiro" | "Envío";
+  total: number;
+  status: "Completado" | "Pendiente" | "Coordinando";
+  date: string;
+  items: OrderItemSummary[];
+}
